@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" %>
-<%@ taglib uri="jakarta.tags.core" prefix="c" %>
+<%@ taglib uri="jakarta.tags.core" prefix="c" %> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,8 +22,16 @@
 	<p>${film.releaseYear }, Rated ${film.rating }</p>
 	<p>${film.length } minutes</p>
 	<blockquote>${film.description }</blockquote>
+	
+<form action="goToEditFilm.do?filmId=${film.id}">
+<button>Edit this film</button>	
+</form>
+<form action="deleteFilm.do?filmId=${film.id}">
+<button>Delete this film</button>	
+</form>
+
 </c:otherwise>
 </c:choose>
-</form>
+	
 </body>
 </html> 
