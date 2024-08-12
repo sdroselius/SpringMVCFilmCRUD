@@ -17,4 +17,6 @@ public interface FilmDAO {
 	public void addFilm(Film newFilm);
 
 	public boolean deleteFilmById(Film filmToDelete);
+
+	List<Film> findAllFilms();
 }
