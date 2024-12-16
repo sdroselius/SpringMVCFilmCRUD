@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+/* 	background-color: #FF9971; */
+/* 	background-color: #D1AF89; */
+	background-color: #EED6B9;
+}
+
+rating-dropdown {
+	width: auto !important;
+}
