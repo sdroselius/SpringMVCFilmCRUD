@@ -83,7 +83,7 @@ public class FilmController {
 		int filmId = updatingFilm.getId();
 		System.out.println(updatingFilm);
 		System.out.println("+++++++++ " + filmId);
-		Film updatedFilm = filmDao.createFilm(updatingFilm);
+		Film updatedFilm = filmDao.updateFilm(updatingFilm);
 		if (updatedFilm == null) {
 			redir.addFlashAttribute("errorUpdatingFilm", true);
 			return "redirect:goToEditFilm.do?filmId=" + filmId;
