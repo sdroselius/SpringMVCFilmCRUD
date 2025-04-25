@@ -29,7 +29,7 @@ dependencies {
     implementation group: 'jakarta.servlet.jsp.jstl', name: 'jakarta.servlet.jsp.jstl-api', version: '3.0.0'
     implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.0'
     compileOnly group: 'jakarta.servlet', name: 'jakarta.servlet-api', version: '6.0.0'
-    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:10.0.27'
     implementation 'org.glassfish.expressly:expressly:6.0.0-M1'
 
     // MySQL Driver
