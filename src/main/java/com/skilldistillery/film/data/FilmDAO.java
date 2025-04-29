@@ -13,5 +13,5 @@ public interface FilmDAO {
 	
 	Film addFilm(Film newFilm);
 	Film updateFilm(Film updatingFilm);
-	void deleteFilm(Film filmToDelete);
+	boolean deleteFilm(int filmId);
 }
